@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.ott-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: linear-gradient(45deg, #000000, #e60000);  /* Black to Red gradient */
+    color: white;
+    border: none;
+    border-radius: 8px;  /* Slightly rounded corners */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.ott-btn:hover {
+    background: linear-gradient(45deg, #e60000, #000000); /* Reversed gradient on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Active (click) state */
+.ott-btn:active {
+    transform: scale(0.98); /* Slight shrink effect when clicked */
+}

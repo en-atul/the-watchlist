@@ -1,37 +1,91 @@
-body {
-  background-color: black;
-  color: white;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+@font-face {
+  font-family: "Monoton";
+  src: url("./assets/fonts/Monoton-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.container {
-  padding: 20px;
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background: linear-gradient(135deg, #000000, #333);
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+#root {
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 .title {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #000, #fff);
+  background-clip: text;
+  color: transparent;
   text-align: center;
+  font-family: "Monoton", sans-serif;
+}
+
+.platform-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.platform-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 4px 16px #121212;
+  width: 100%;
+  max-width: 200px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.platform-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 32px rgba(95, 95, 95, 0.25);
+}
+
+.platform-logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
 }
 
 .ott-btn {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background: linear-gradient(45deg, #000000, #e60000);  /* Black to Red gradient */
-    color: white;
-    border: none;
-    border-radius: 8px;  /* Slightly rounded corners */
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #090917, #090202);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* Hover effect */
 .ott-btn:hover {
-    background: linear-gradient(45deg, #e60000, #000000); /* Reversed gradient on hover */
-    transform: scale(1.05); /* Slight zoom effect */
-}
-
-/* Active (click) state */
-.ott-btn:active {
-    transform: scale(0.98); /* Slight shrink effect when clicked */
+  background: linear-gradient(135deg, #000000, #120f0f);
+  transform: scale(1.05);
 }

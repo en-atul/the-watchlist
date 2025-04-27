@@ -5,13 +5,15 @@ let mainWindow = null;
 
 const createWindow = () => {
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    title: "The Watchlist",
+    width: 500,
+    height: 700,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
       preload: path.join(__dirname, "preload.js"),
     },
+    icon: path.join(__dirname, '../src/assets/tw.png'),
   });
 
   const baseUrl = isDev

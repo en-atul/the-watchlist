@@ -18,30 +18,11 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.module\.(css|scss)$/,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: { modules: true },
-          },
-          "sass-loader",
-        ],
+        test: /\.(css)$/i,
+        use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(css|s[ac]ss)$/i,
-        exclude: /\.module\.(scss|sass)$/,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: { importLoaders: 1 },
-          },
-          "sass-loader",
-        ],
-      },
-      {
-        test: /\.(png|jpg|jpeg|gif|svg)$/,
+        test: /\.(png|jpg|jpeg|gif|svg|webp)$/,
         type: "asset",
       },
       {

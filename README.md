@@ -52,7 +52,7 @@ This project is an **exploration** into using Electron to build a simple desktop
    pnpm dev
    ```
 
-   To build the app for distribution, run:
+   To build the app locally, run:
 
    ```bash
    pnpm run package
@@ -75,6 +75,6 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
-Enjoy seamless access to your favorite streaming services with **Streaming Hub**! 🎉
+Enjoy seamless access to your favorite streaming services with **The Watchlist**! 🎉
 
 ---

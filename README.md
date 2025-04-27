@@ -52,11 +52,11 @@ This project is an **exploration** into using Electron to build a simple desktop
    pnpm dev
    ```
 
-   To build the app locally, run:
+To build the app locally, run:
 
-   ```bash
-   pnpm run package
-   ```
+```bash
+pnpm run package
+```
 
 ---
 

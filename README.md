@@ -1,8 +1,10 @@
-# **Streaming Hub** 🎬
+# **The Watchlist** 🎬
 
 **Streaming Hub** is a desktop app created just for fun to consolidate your favorite streaming platforms in one place. No more opening individual websites to continue watching your shows. Just launch the app and pick up where you left off—easy and quick!
 
 ---
+
+![Banner](screenshots/preview.png)
 
 ## **About** 📺
 
@@ -70,3 +72,5 @@ This project is open-source and available under the [MIT License](LICENSE).
 Enjoy seamless access to your favorite streaming services with **Streaming Hub**! 🎉
 
 ---
+
+node node_modules/electron/install.js

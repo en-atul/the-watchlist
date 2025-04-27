@@ -5,9 +5,10 @@
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "dev": "concurrently -k \"BROWSER=none npm start\" \"npm:electron\"",
     "electron": "wait-on tcp:3000 && electron .",
     "electron:build": "electron-builder",
+    "kill-webpack": "killall webpack || true",
+    "dev": "npm run kill-webpack && concurrently -k \"BROWSER=none npm start\" \"npm:electron\"",
     "package": "npm run build && npm run electron:build"
   },
   "keywords": [
@@ -44,7 +45,6 @@
     "@babel/preset-typescript": "^7.27.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.16",
     "@svgr/webpack": "^8.1.0",
-    "@types/electron": "^1.6.12",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "autoprefixer": "^10.4.21",
@@ -75,5 +75,14 @@
     "electron-is-dev": "^3.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "electron"
+    ],
+    "onlyBuiltDependencies": [
+      "core-js-pure",
+      "electron-winstaller"
+    ]
   }
 }

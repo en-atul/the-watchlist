@@ -40,6 +40,12 @@ This project is an **exploration** into using Electron to build a simple desktop
    pnpm install
    ```
 
+   After installing dependencies, run 👇🏻
+
+   ```bash
+   node node_modules/electron/install.js
+   ```
+
 3. **Run the app**:
 
    ```bash
@@ -72,5 +78,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 Enjoy seamless access to your favorite streaming services with **Streaming Hub**! 🎉
 
 ---
-
-node node_modules/electron/install.js
